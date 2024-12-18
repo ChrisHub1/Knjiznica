@@ -26,7 +26,7 @@
         <q-item-label header>
           Essential Links
         </q-item-label>
-
+        
         <!-- Zamjena q-item s router-link -->
         <router-link
           v-for="link in linksList"
@@ -59,8 +59,8 @@ import { useRouter } from 'vue-router'
 
 const router = useRouter()
 const leftDrawerOpen = ref(false)
-const linksList = 
-[
+
+const linksList = [
   {
     title: 'Naslovnica',
     caption: 'Početna stranica',
@@ -102,6 +102,12 @@ const linksList =
     caption: 'Kreirajte račun',
     icon: 'person_add',
     link: '/registracija'
+  },
+  {
+    title: 'Popis knjiga',
+    caption: 'Popis knjiga',
+    icon: 'person_add',
+    link: '/popisknjiga1'
   }
 ]
 
